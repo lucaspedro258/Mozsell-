@@ -1,0 +1,294 @@
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.menu {
+  display: inline-flexbox;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0066cc;
+  padding: 15px 30px;
+  color: white;
+}
+
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0066cc, #00aaff);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #0066cc;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 50px 20px;
+  text-align: center;
+  background: #eee;
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+}
+
+.contacto input,
+.contacto textarea {
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.contacto button {
+  background: #0066cc;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+#productForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+#productForm input,
+#productForm textarea {
+  margin: 5px 0;
+  padding: 10px;
+}
+
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  }
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #007A3D, #bca23b, #CE1126);
+}
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.login-box input:focus {
+  border-color: #CE1126;
+  outline: none;
+}
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #CE1126;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #a50d1f;
+}
+.link {
+  margin-top: 10px;
+}
+
+.link a {
+  color: #CE1126;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+  }
+}
+.login-box {
+  animation: fadeLogin 0.8s ease;
+}
+
+@keyframes fadeLogin {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.google-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+#productList div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}

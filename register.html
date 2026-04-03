@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registar - Mozsell</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+  <div class="login-box">
+
+    <h2>Criar Conta</h2>
+    <p>Junte-se ao Mozsell</p>
+
+    <form id="registerForm">
+
+      <input id="name" type="text" placeholder="Nome" required>
+      <input id="email" type="email" placeholder="Email" required>
+
+      <!-- senha -->
+      <div class="password-box">
+        <input id="password" type="password" placeholder="Senha" required>
+        <span onclick="togglePassword('password')" id="eye1">👁️</span>
+      </div>
+
+      <!-- confirmar senha -->
+      <div class="password-box">
+        <input id="confirmPassword" type="password" placeholder="Confirmar senha" required>
+        <span onclick="togglePassword('confirmPassword')" id="eye2">👁️</span>
+      </div>
+
+      <button type="submit">
+        <span id="btnText">Criar Conta</span>
+        <span id="loader" style="display:none;">⏳</span>
+      </button>
+
+      <p id="errorMsg" class="error"></p>
+
+    </form>
+
+    <p class="link">
+      Já tem conta? <a href="login.html">Entrar</a>
+    </p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
